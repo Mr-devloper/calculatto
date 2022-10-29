@@ -1,0 +1,42 @@
+.full-width{
+    width: 100vw;
+}
+.full-height{
+    height: 100vh;
+}
+.flex{
+    display: flex;
+}
+.dir-col{
+    flex-direction: column;
+}
+.dir-row{
+    flex-direction: row;
+}
+.border-red{
+    border: 2px solid red;
+}
+.x{
+    align-items: center;
+}
+.y{
+    justify-content: center;
+}
+.frem1{
+ font-size: 1rem;
+}
+.frem2{
+ font-size: 2rem;
+}
+.clr{
+    background: rgb(0,212,255);
+    background: linear-gradient(162deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 66%, rgba(2,0,36,1) 97%); 
+}
+.clr-white{
+}
+.clr-black{
+    background-color: black;
+}
+.land{
+    border-bottom: 1px white solid;
+}
