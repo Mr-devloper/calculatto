@@ -21,12 +21,11 @@
     height: 12vh;
     border: none;
 background: transparent;
-outline: none;
 
     
 }
 .button{
-    padding: 10px 27px;
+    padding: 1.8vh 2.5vw;
     margin: 8px 2px;
     background: transparent;
     border: none;
@@ -35,4 +34,16 @@ outline: none;
 }
 .maintain{
     margin-left: 50px;
+    background: rgba(241, 228, 228,.2);
+    height: 20vh;
+    width: 15vw;
+    padding-top: 1vh;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+}
+.history{
+    margin-top: 2vh;
+    
+        color: aliceblue;
+    
 }

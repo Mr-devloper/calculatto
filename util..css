@@ -6,6 +6,7 @@
 }
 .flex{
     display: flex;
+    
 }
 .dir-col{
     flex-direction: column;
@@ -33,6 +34,7 @@
     background: linear-gradient(162deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 66%, rgba(2,0,36,1) 97%); 
 }
 .clr-white{
+
 }
 .clr-black{
     background-color: black;
