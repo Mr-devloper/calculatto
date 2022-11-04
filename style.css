@@ -22,6 +22,8 @@
     height: 12vh;
     border: none;
     background: transparent;
+    text-align: right;
+    outline-color: white;
 
     
 }

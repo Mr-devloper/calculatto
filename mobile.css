@@ -3,15 +3,14 @@
 }
 .button{
     font-size: 1.2rem;
-    padding: 1.8vh 6.5vw 2vh 6.5vw;
+    padding: 1.8vh 7vw 2vh 7vw;
 
 }
 .cal-bg{
     height: 60vh;
-    width: 65vw;
+    width: 67vw;
 }
 .userInput {
-    text-align: right;
     width: 63vw;
     height: 9vh;
     border: none;
