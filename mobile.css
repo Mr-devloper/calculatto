@@ -1,0 +1,18 @@
+#foot{
+    display: none;
+}
+.button{
+    font-size: 1.2rem;
+    padding: 1.8vh 6.5vw 2vh 6.5vw;
+
+}
+.cal-bg{
+    height: 60vh;
+    width: 65vw;
+}
+.userInput {
+    text-align: right;
+    width: 63vw;
+    height: 9vh;
+    border: none;
+}
