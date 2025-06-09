@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>স্কয়ার মিটার ↔ শতক কনভার্টার</title>
+<style>
+  body { font-family: Arial, sans-serif; padding: 20px; background: #f4f6f8; }
+  h2 { text-align: center; color: #2c3e50; }
+  .container { max-width: 400px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
+  label { display: block; margin: 15px 0 5px; font-weight: bold; color: #34495e; }
+  input[type="number"] { width: 100%; padding: 10px; font-size: 16px; border-radius: 4px; border: 1px solid #ccc; }
+  button { width: 100%; padding: 12px; margin-top: 20px; font-size: 16px; border: none; border-radius: 4px; background: #2980b9; color: white; cursor: pointer; }
+  button:hover { background: #3498db; }
+  #result { margin-top: 20px; font-size: 18px; color: #27ae60; text-align: center; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>স্কয়ার মিটার ↔ শতক কনভার্টার</h2>
+  <label for="sqm">স্কয়ার মিটার (m²) লিখুন:</label>
+  <input type="number" id="sqm" placeholder="উদাহরণ: 1916.11" step="any" />
+
+  <button onclick="convertToShotok()">স্কয়ার মিটার → শতক</button>
+
+  <label for="shotok" style="margin-top: 30px;">শতক লিখুন:</label>
+  <input type="number" id="shotok" placeholder="উদাহরণ: 47.39" step="any" />
+
+  <button onclick="convertToSqm()">শতক → স্কয়ার মিটার</button>
+
+  <div id="result"></div>
+</div>
+
+<script>
+  function convertToShotok() {
+    const sqm = parseFloat(document.getElementById('sqm').value);
+    if (isNaN(sqm) || sqm <= 0) {
+      document.getElementById('result').textContent = 'সঠিক স্কয়ার মিটার সংখ্যা দিন';
+      return;
+    }
+    const shotok = sqm / 40.46;
+    document.getElementById('result').textContent = `${sqm} m² = ${shotok.toFixed(2)} শতক`;
+  }
+
+  function convertToSqm() {
+    const shotok = parseFloat(document.getElementById('shotok').value);
+    if (isNaN(shotok) || shotok <= 0) {
+      document.getElementById('result').textContent = 'সঠিক শতক সংখ্যা দিন';
+      return;
+    }
+    const sqm = shotok * 40.46;
+    document.getElementById('result').textContent = `${shotok} শতক = ${sqm.toFixed(2)} m²`;
+  }
+</script>
+</body>
+</html>
